@@ -1,0 +1,35 @@
+## Get to the residing folder of mysql in xampp and then change directory to bin
+
+cd C:\xampp\mysql\bin
+
+## enter the Maria Database with root 
+
+mysql -u root -p
+
+No Password
+
+## Show databases
+
+SHOW DATABASES;
+
+## Create database here for instance myflaskapp
+
+CREATE DATABASE myflask
+
+## move to the recently created databases
+
+USE myflaskapp
+
+## Create table for users with the following parameters
+
+CREATE TABLE users(id INT(11) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(100),username VARCHAR(30), password VARCHAR(100),
+register_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+## To see the created tables in the actie database
+
+SHOW TABLES;
+
+## In order to open the desired tables
+
+DESCRIBE users;
+
